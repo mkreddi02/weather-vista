@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+<head>
+    <title>Weather App</title>
+    <style>
+        body {
+            background-image: url(ny.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+        }
+        .main {
+            background: linear-gradient(to right, #0f4c75, #3282b8, #bbe1fa);
+            border: 2px solid black;
+            margin-top: 165px;
+            margin-left: 350px;
+            margin-right: 350px;
+            height: 350px;
+            border-radius: 50px;
+        }
+        .result-info {
+            text-align: center;
+        }
+        form {
+            padding-top: 10px;
+            padding-left: 225px;
+        }
+        button {
+            background-color: lightskyblue;
+            padding: 5px;
+            margin-left: 60px; 
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="result-info">
+            <h2 id="city-result">Hyderabad</h2>
+            <p id="date">Date</p>
+            <p id="city-tem">Temperature</p>
+            <p id="weather-con">Weather Condition</p><br>
+            <img id="image" src="pj1.png" alt="No image available" height="70px" width="70px"><br>
+        </div>
+        <form>
+            <input type="text" placeholder="Search location" id="search-input"><br>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
